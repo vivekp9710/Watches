@@ -1,0 +1,27 @@
+.active {
+    text-transform: uppercase !important;
+    color: antiquewhite;
+
+}
+
+/* .active.nav-item {
+    color: white;
+} */
+
+
+li a.nav-link {
+    text-decoration: none;
+
+
+}
+
+.li {
+    text-transform: uppercase !important;
+    color: black;
+
+
+}
+
+.userIcon:hover {
+    color: white;
+}

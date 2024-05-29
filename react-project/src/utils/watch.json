@@ -2,61 +2,83 @@
     {
         "id": 1,
         "name": "Rolex",
-        "price": "$60",
+        "price": "6000",
         "gender": "male",
-        "img": "https://images.pexels.com/photos/3766111/pexels-photo-3766111.jpeg?auto=compress&cs=tinysrgb&w=600"
+        "img": "https://m.media-amazon.com/images/I/51p7e6Ra21L.jpg"
     },
     {
         "id": 2,
-        "name": "Casio",
-        "price": "$100",
-        "gender": "female",
-        "img": "https://images.pexels.com/photos/11780447/pexels-photo-11780447.jpeg?auto=compress&cs=tinysrgb&w=600"
+        "name": "Rolex",
+        "price": "11000",
+        "gender": "male",
+        "img": "https://m.media-amazon.com/images/I/51NEf1HjneL._SX342_SY445_.jpg"
     },
     {
         "id": 3,
-        "name": "Rolex",
-        "price": "$80",
-        "img": "https://images.pexels.com/photos/47856/rolex-wrist-watch-clock-gmt-47856.jpeg?auto=compress&cs=tinysrgb&w=600"
+        "name": "Titan",
+        "price": "8099",
+        "img": "https://m.media-amazon.com/images/I/61VinEvap5L._SX679_.jpg"
     },
     {
         "id": 4,
-        "name": "Rolex",
-        "price": "$70",
-        "img": "https://images.pexels.com/photos/236900/pexels-photo-236900.jpeg?auto=compress&cs=tinysrgb&w=600"
+        "name": "Titan",
+        "price": "7100",
+        "gender": "male",
+        "img": "https://m.media-amazon.com/images/I/71ciibnlfpL._SX679_.jpg"
     },
     {
         "id": 5,
         "name": "Noise",
-        "price": "$50",
+        "price": "5099",
         "gender": "kids",
-        "img": "https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=600"
+        "img": "https://m.media-amazon.com/images/I/61QiBo-sPTL._SX679_.jpg"
     },
     {
         "id": 6,
         "name": "Rolex",
-        "price": "$150",
-        "img": "https://images.pexels.com/photos/4124334/pexels-photo-4124334.jpeg?auto=compress&cs=tinysrgb&w=600"
+        "price": "5500",
+        "img": "https://m.media-amazon.com/images/I/615nnoTis0S._SX679_.jpg"
     },
     {
         "id": 7,
         "name": "Noise",
-        "price": "$70",
+        "price": "2500",
         "gender": "kids",
         "img": "https://m.media-amazon.com/images/I/61HMHXVRvYL._SY450_.jpg"
     },
     {
         "id": 8,
         "name": "Noise",
-        "price": "$80",
+        "price": "1800",
         "gender": "kids",
         "img": "https://m.media-amazon.com/images/I/61J-OddQDeL._SY450_.jpg"
     },
     {
         "id": 9,
         "name": "Fire-Bolt",
-        "price": "$90",
+        "price": "2900",
         "gender": "female",
         "img": "https://m.media-amazon.com/images/I/71Yro+y7CQL._AC_UY218_.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Fire-Bolt",
+        "price": "3900",
+        "gender": "male",
+        "img": "https://m.media-amazon.com/images/I/41dg1V9hTOL._SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Fire-Bolt",
+        "price": "1900",
+        "gender": "female",
+        "img": "https://m.media-amazon.com/images/I/41l9nh11tnL._SX300_SY300_QL70_FMwebp_.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Fire-Bolt",
+        "price": "2600",
+        "gender": "female",
+        "img": "https://m.media-amazon.com/images/I/51w6VCsZ6GL._SX300_SY300_QL70_FMwebp_.jpg"
     }
 ]

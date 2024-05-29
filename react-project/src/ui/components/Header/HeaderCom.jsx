@@ -14,9 +14,9 @@ import {
 } from 'reactstrap';
 import "./index.css";
 import { useSelector } from 'react-redux';
-import CardCom from "../CardCom";
+import CardCom from '../Card/CardCom';
 import jsonData from "../../../utils/watch.json";
-
+import Slider from "../Slider/SliderCom"
 
 function HeaderCom(props) {
 
@@ -29,9 +29,9 @@ function HeaderCom(props) {
     //       };
 
     const userData = useSelector(state => state?.auth?.user);
+    const navigate = useNavigate();
     // console.log("userdata", userData);
     // console.log("----->", JSON.stringify(userData) === "{}");
-    const navigate = useNavigate();
 
     const [searchQuery, setSearchQuery] = useState("");
     const [filteredProducts, setFilteredProducts] = useState([]);
@@ -40,6 +40,7 @@ function HeaderCom(props) {
     const handleSearch = (e) => {
         const query = e.target.value;
         setSearchQuery(query);
+
         if (query.trim() === "") {
             setFilteredProducts([]);
         } else {
@@ -49,20 +50,30 @@ function HeaderCom(props) {
             setFilteredProducts(filtered);
 
         };
-    }
+    };
 
 
     return (
         <div>
-            <Navbar expand={"md"} style={{ backgroundColor: "goldenrod" }}>
-                <NavbarBrand href="/">W@TcHeS</NavbarBrand>
-                {/* <NavbarToggler onClick={toggle} /> */}
+            <Navbar expand={"lg"} style={{ backgroundColor: "lightblue" }}>
+                <NavbarBrand href="/" style={{ color: "964b00" }}>
+
+                    {/* <NavbarToggler onClick={toggle} /> */}
+                    {/* <img src="https://bingerstore.in/cdn/shop/products/Switzerland-Mechanical-Watch-Men-Binger-Fashion-Men-Watches-Skeleton-Wrist-Automatic-Clock-Waterproof-Relogio-Masculino-B-0_1024x1024.jpg?v=1573336546" alt=""
+                        style={{
+                            height: 20,
+                            width: 20
+                        }} />
+                    {''}
+                    <span style={{ color: "964b00" }}></span> */}
+                    W@tches
+                </NavbarBrand>
                 <Collapse navbar>
                     {
                         userData?.userType === "admin" ? (
 
 
-                            <Nav className="me-auto  ms-1 gap-2 " navbar>
+                            <Nav className="me-auto  ms-5 gap-5 " navbar>
                                 <NavItem>
                                     <NavLink to="/admin/dashboard">Dashboard</NavLink>
                                 </NavItem>
@@ -77,12 +88,19 @@ function HeaderCom(props) {
                                     </NavLink>
                                 </NavItem>
 
+                                <NavItem>
+
+                                    <NavLink to="/user">
+                                        User
+                                    </NavLink>
+                                </NavItem>
+
                             </Nav>
                         ) : (
                             <>
-                                <Nav className="me-auto  ms-1 gap-2 " navbar>
+                                <Nav className="me-auto  ms-5 gap-5 " navbar>
                                     <NavItem>
-                                        <NavLink to="">Home</NavLink>
+                                        <NavLink to="/">Home</NavLink>
                                     </NavItem>
                                     <NavItem>
                                         <NavLink to="/men">
@@ -114,7 +132,9 @@ function HeaderCom(props) {
                                     outline: "none",
                                 }}
 
-                                    className="border-0  rounded-1 p-1 w-25 " type="text" placeholder='search  text here'
+                                    className="border-0  rounded-1 p-1 w-25 "
+                                    type="text"
+                                    placeholder='search  text here'
                                     value={searchQuery}
                                     onChange={handleSearch} />
                                 <Search color='#ffffff' />
@@ -123,7 +143,7 @@ function HeaderCom(props) {
 
                     {JSON.stringify(userData) !== "{}" ? (
                         <User2 className='userIcon ms-2'
-                            onClick={() => navigate("/Profile")} />
+                            onClick={() => navigate("/profile")} />
 
                     ) : (
                         <Button style={{
@@ -147,8 +167,9 @@ function HeaderCom(props) {
                     ))}
 
                 </div>
-
             </div>
+
+
         </div>
     );
 }

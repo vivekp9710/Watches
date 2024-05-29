@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
-import CardCom from "../../components/CardCom";
 import WatchData from "../../../utils/watch.json"
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import CardCom from "../../components/Card/CardCom";
 
 export default function HomeContent() {
     const [Data, setData] = useState(WatchData);

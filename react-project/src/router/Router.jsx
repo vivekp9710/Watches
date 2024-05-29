@@ -1,10 +1,10 @@
+import React, { Component } from 'react'
 import Home from '../ui/pages/Home/Home'
-import React, { Component, Profiler } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Error404 from '../ui/pages/Error-404/Error404'
 import LoginForm from '../ui/pages/Login'
 import HeaderCom from '../ui/components/Header/HeaderCom'
-import FooterCom from '../ui/components/FooterCom'
+import FooterCom from '../ui/components/Footer/FooterCom'
 import Kids from '../ui/pages/Kids'
 import Men from '../ui/pages/Men'
 import Women from '../ui/pages/Women/Women'
@@ -13,13 +13,13 @@ import { store } from "../Redux/app/store"
 import Contact from '../ui/pages/Contact'
 import About from "../ui/pages/About"
 import Dashboard from '../ui/pages/Admin/Dashboard/Dashboard'
-import ProductForm from '../ui/pages/Admin/Product/ProductForm'
 import ProductCom from '../ui/pages/Admin/Product/ProductCom'
 import { AuthRoute, AdminAuth } from './AuthRoute'
 import ProductPage from '../ui/pages/ProductPage/ProductPage'
 import Profile from '../ui/pages/Profile/Profile'
 import Orders from '../ui/pages/Admin/Order/Orders'
 import Userlist from '../ui/pages/Admin/User/UserList'
+import SignUp from '../ui/pages/SignUp/SignUp'
 
 
 export default function Router() {
@@ -42,6 +42,7 @@ export default function Router() {
                         <Route path="/kids" element={<Kids />} />
                         <Route path="/About" element={<About />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path='/signup' element={<SignUp />} />
                         <Route path="/productpage/:id" element={<ProductPage />} />
 
 
